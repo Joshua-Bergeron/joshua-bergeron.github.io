@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography, Avatar, Button, Paper } from "@mui/material";
+import profileImage from "../assets/FullSizeRender.jpeg";
 
 function Home() {
   return (
@@ -35,7 +36,7 @@ function Home() {
         >
           <Avatar
             alt="Joshua Bergeron"
-            src="src/assets/FullSizeRender.jpeg"
+            src={profileImage}
             sx={{
               width: { xs: 200, sm: 260, md: 320 },
               height: { xs: 200, sm: 260, md: 320 },

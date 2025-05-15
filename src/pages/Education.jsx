@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Paper, Grid, Divider } from "@mui/material";
+import uciImage from "../assets/download.jpeg";
 
 function Education() {
   return (
@@ -46,7 +47,7 @@ function Education() {
           >
             <Box
               component="img"
-              src="src/assets/download.jpeg"
+              src={uciImage}
               alt="University of California, Irvine Logo"
               sx={{
                 width: "100px",
