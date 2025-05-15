@@ -8,17 +8,17 @@ const socials = [
   {
     name: "LinkedIn",
     icon: <LinkedInIcon fontSize="large" />,
-    url: "https://www.linkedin.com/in/your-linkedin-handle/",
+    url: "https://www.linkedin.com/in/joshua-luc-bergeron/",
   },
   {
     name: "Email",
     icon: <EmailIcon fontSize="large" />,
-    url: "mailto:your-email@example.com",
+    url: "mailto:joshua.luc.bergeron@gmail.com",
   },
   {
     name: "GitHub",
     icon: <GitHubIcon fontSize="large" />,
-    url: "https://github.com/your-github-handle",
+    url: "https://github.com/Joshua-Bergeron",
   },
 ];
 
