@@ -12,7 +12,7 @@ import "./App.css";
 const lightTheme = createTheme({
   palette: {
     primary: { main: "#1976d2" }, // Blue
-    secondary: { main: "#ff4081" }, // Pink
+    secondary: { main: "#FF9800" },
     background: { default: "#f5f5f5", paper: "#ffffff" }, // Light background
     text: { primary: "#212121", secondary: "#757575" }, // Dark text
   },

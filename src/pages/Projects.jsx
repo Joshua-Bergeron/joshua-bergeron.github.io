@@ -7,8 +7,10 @@ import {
   useTheme,
   Grid,
   Button,
+  Stack,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 const projects = [
   {
@@ -23,17 +25,20 @@ const projects = [
       "Storybook",
       "Vercel",
       "Jest",
+      "NextAuth",
     ],
     bullets: [
       "Developed a full-stack vehicle maintenance tracker using Next.js and React for a seamless user experience.",
       "Built and styled a responsive UI with Material-UI and Storybook for reusable, well-documented components.",
       "Implemented backend services with Node.js and Prisma ORM, connecting to Neon serverless PostgreSQL database.",
+      "Added route protection and user authentication using NextAuth to secure sensitive user data and pages.",
+      "Created custom API routes in Next.js to efficiently fetch and manipulate vehicle and maintenance data.",
       "Wrote comprehensive unit tests to ensure code quality and reliability across frontend and backend components.",
       "Deployed the app on Vercel, ensuring fast performance and continuous deployment pipelines.",
     ],
     github: "https://github.com/Joshua-Bergeron/garagebook",
+    demo: "https://garagebook.vercel.app/",
   },
-
   {
     title: "Search Engine",
     tech: ["Python", "Beautiful Soup", "lxml", "NLTK"],
@@ -106,7 +111,7 @@ export default function Projects() {
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">
-        {projects.map(({ title, tech, bullets, github }, idx) => (
+        {projects.map(({ title, tech, bullets, github, demo }, idx) => (
           <Grid key={idx} item xs={12} sm={10} md={6}>
             <Paper
               elevation={3}
@@ -159,8 +164,8 @@ export default function Projects() {
                 ))}
               </Box>
 
-              {github && (
-                <Box mt={2}>
+              <Stack direction="row" spacing={2} mt={2}>
+                {github && (
                   <Button
                     variant="outlined"
                     color="primary"
@@ -172,8 +177,21 @@ export default function Projects() {
                   >
                     View on GitHub
                   </Button>
-                </Box>
-              )}
+                )}
+                {demo && (
+                  <Button
+                    variant="outlined"
+                    color="secondary"
+                    startIcon={<LaunchIcon />}
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ textTransform: "none" }}
+                  >
+                    View Demo
+                  </Button>
+                )}
+              </Stack>
             </Paper>
           </Grid>
         ))}
