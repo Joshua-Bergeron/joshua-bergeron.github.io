@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography, Avatar, Button, Paper } from "@mui/material";
-import profileImage from "../assets/FullSizeRender.jpeg";
+import profileImage from "../assets/FullSizeRender.jpg";
 
 function Home() {
   return (
@@ -87,8 +87,9 @@ function Home() {
                 mb: 4,
               }}
             >
-              Welcome to my portfolio. Explore my work, experience, and ways to
-              connect. Let’s build something amazing together!
+              I’m a passionate software engineer with experience in testing,
+              automation, and building quality software. I love solving
+              problems, learning fast, and creating things that make an impact.
             </Typography>
 
             <a href="#connect" style={{ textDecoration: "none" }}>

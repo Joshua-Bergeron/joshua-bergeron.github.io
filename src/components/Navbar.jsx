@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -6,7 +6,17 @@ import {
   Typography,
   Stack,
   Container,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  useTheme,
+  useMediaQuery,
+  Box,
 } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const navItems = [
   { label: "Home", id: "#home" },
@@ -17,6 +27,34 @@ const navItems = [
 ];
 
 function Navbar() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = (open) => () => {
+    setDrawerOpen(open);
+  };
+
+  const drawerList = (
+    <Box
+      sx={{ width: 250 }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
+    >
+      <List>
+        {navItems.map(({ label, id }) => (
+          <ListItem key={label} disablePadding>
+            <ListItemButton component="a" href={id}>
+              <ListItemText primary={label} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
   return (
     <AppBar
       position="sticky"
@@ -45,22 +83,43 @@ function Navbar() {
             Joshua Bergeron
           </Typography>
 
-          <Stack direction="row" spacing={3}>
-            {navItems.map(({ label, id }) => (
-              <Button
-                key={label}
-                href={id}
-                sx={{
-                  textTransform: "none",
-                  color: "#1976d2",
-                  fontSize: "1.2rem",
-                  "&:hover": { color: "#808080" },
-                }}
+          {isMobile ? (
+            <>
+              <IconButton
+                edge="end"
+                color="inherit"
+                aria-label="menu"
+                onClick={toggleDrawer(true)}
               >
-                {label}
-              </Button>
-            ))}
-          </Stack>
+                <MenuIcon />
+              </IconButton>
+
+              <Drawer
+                anchor="right"
+                open={drawerOpen}
+                onClose={toggleDrawer(false)}
+              >
+                {drawerList}
+              </Drawer>
+            </>
+          ) : (
+            <Stack direction="row" spacing={3}>
+              {navItems.map(({ label, id }) => (
+                <Button
+                  key={label}
+                  href={id}
+                  sx={{
+                    textTransform: "none",
+                    color: "#1976d2",
+                    fontSize: "1.2rem",
+                    "&:hover": { color: "#808080" },
+                  }}
+                >
+                  {label}
+                </Button>
+              ))}
+            </Stack>
+          )}
         </Toolbar>
       </Container>
     </AppBar>

@@ -66,13 +66,13 @@ function Education() {
                 University of California, Irvine
               </Typography>
 
-              <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>
                 Bachelor of Science – Computer Science
               </Typography>
-              <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+              <Typography variant="body2" color="text.secondary">
                 June 2024
               </Typography>
-              <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+              <Typography variant="body2" color="text.secondary">
                 GPA: 3.99
               </Typography>
             </Box>
@@ -84,13 +84,13 @@ function Education() {
         sx={{ my: 4, width: "60%", borderColor: "rgba(0, 0, 0, 0.1)" }}
       />
 
-      <Box sx={{ maxWidth: 800, textAlign: "center", mt: 4 }}>
+      <Box sx={{ maxWidth: 800, textAlign: "center" }}>
         <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
           Relevant Coursework
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-          Some of the most exciting projects and courses I have worked on during
-          my studies include:
+          Select courses that shaped my foundation in systems, software
+          engineering, and advanced CS concepts:
         </Typography>
         <ul
           style={{
@@ -102,20 +102,44 @@ function Education() {
         >
           <li>
             <Typography variant="body2" color="text.secondary">
-              Data Structures and Algorithms: Implemented advanced algorithms in
-              real-world scenarios.
+              Gained hands-on experience with concurrency, memory management,
+              and process control in modern operating systems.
             </Typography>
           </li>
           <li>
             <Typography variant="body2" color="text.secondary">
-              Machine Learning: Developed a predictive model using Python and
-              TensorFlow.
+              Learned about cryptography, authentication protocols, and threat
+              modeling.
             </Typography>
           </li>
           <li>
             <Typography variant="body2" color="text.secondary">
-              Web Development: Built full-stack applications using React,
-              Node.js, and MongoDB.
+              Built a working memory allocator from scratch. Optimized allocator
+              performance to handle dynamic memory requests reliably and safely.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body2" color="text.secondary">
+              Implemented end-to-end machine learning pipelines for
+              classification, regression, and clustering.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body2" color="text.secondary">
+              Applied Agile methodology and software design principles in
+              collaborative, version-controlled projects.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body2" color="text.secondary">
+              Developed search and ranking algorithms using term frequency and
+              information retrieval models.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body2" color="text.secondary">
+              Explored computer networking concepts such as socket programming,
+              packet switching, and TCP/IP protocols.
             </Typography>
           </li>
         </ul>

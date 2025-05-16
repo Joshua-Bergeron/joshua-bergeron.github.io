@@ -1,7 +1,39 @@
 import React from "react";
-import { Box, Typography, Paper, Chip, useTheme, Grid } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Paper,
+  Chip,
+  useTheme,
+  Grid,
+  Button,
+} from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const projects = [
+  {
+    title: "GarageBook",
+    tech: [
+      "React",
+      "Next.js",
+      "Neon",
+      "Material-UI",
+      "Node.js",
+      "Prisma",
+      "Storybook",
+      "Vercel",
+      "Jest",
+    ],
+    bullets: [
+      "Developed a full-stack vehicle maintenance tracker using Next.js and React for a seamless user experience.",
+      "Built and styled a responsive UI with Material-UI and Storybook for reusable, well-documented components.",
+      "Implemented backend services with Node.js and Prisma ORM, connecting to Neon serverless PostgreSQL database.",
+      "Wrote comprehensive unit tests to ensure code quality and reliability across frontend and backend components.",
+      "Deployed the app on Vercel, ensuring fast performance and continuous deployment pipelines.",
+    ],
+    github: "https://github.com/Joshua-Bergeron/garagebook",
+  },
+
   {
     title: "Search Engine",
     tech: ["Python", "Beautiful Soup", "lxml", "NLTK"],
@@ -74,7 +106,7 @@ export default function Projects() {
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">
-        {projects.map(({ title, tech, bullets }, idx) => (
+        {projects.map(({ title, tech, bullets, github }, idx) => (
           <Grid key={idx} item xs={12} sm={10} md={6}>
             <Paper
               elevation={3}
@@ -126,6 +158,22 @@ export default function Projects() {
                   </li>
                 ))}
               </Box>
+
+              {github && (
+                <Box mt={2}>
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    startIcon={<GitHubIcon />}
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ textTransform: "none" }}
+                  >
+                    View on GitHub
+                  </Button>
+                </Box>
+              )}
             </Paper>
           </Grid>
         ))}
