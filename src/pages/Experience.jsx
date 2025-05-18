@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Paper, Grid } from "@mui/material";
 import background from "../assets/background2.jpg";
-import events from "../content/ExperienceContent";
+import { events } from "../content/ExperienceContent";
 
 function Experience() {
   return (

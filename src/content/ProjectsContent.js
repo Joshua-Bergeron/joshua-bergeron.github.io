@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const projects = [
+export const projects = [
   {
     title: "GarageBook",
     tech: [

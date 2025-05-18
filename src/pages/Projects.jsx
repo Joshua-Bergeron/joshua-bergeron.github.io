@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
-import projects from "../content/ProjectsContent";
+import { projects } from "../content/ProjectsContent";
 
 export default function Projects() {
   const theme = useTheme();

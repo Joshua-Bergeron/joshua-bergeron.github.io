@@ -1,4 +1,4 @@
-const events = [
+export const events = [
   {
     year: "June 2023 - Present",
     title: "Associate Software Engineer in Test",
@@ -33,5 +33,3 @@ const events = [
     ],
   },
 ];
-
-export default events;
