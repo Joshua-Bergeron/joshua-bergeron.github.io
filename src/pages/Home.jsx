@@ -1,38 +1,50 @@
 import React from "react";
 import { Box, Grid, Typography, Avatar, Button, Paper } from "@mui/material";
 import profileImage from "../assets/FullSizeRender.jpg";
+import background from "../assets/background1.jpg";
 
 function Home() {
   return (
     <Box
       id="home"
       sx={{
+        position: "relative",
         minHeight: "calc(100vh - 80px)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         px: 3,
-        background: "linear-gradient(135deg, #f0f4f8, #d9e2ec)",
+        overflow: "hidden",
       }}
     >
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${background})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          opacity: 0.8,
+          zIndex: 0,
+        }}
+      />
+
       <Grid
         container
         spacing={6}
         alignItems="center"
         justifyContent="center"
-        sx={{
-          maxWidth: 1300,
-          mx: "auto",
-        }}
+        sx={{ maxWidth: 1300, mx: "auto", zIndex: 1 }}
       >
         <Grid
           item
           xs={12}
           md={5}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-          }}
+          sx={{ display: "flex", justifyContent: "center" }}
         >
           <Avatar
             alt="Joshua Bergeron"
@@ -50,10 +62,7 @@ function Home() {
           item
           xs={12}
           md={7}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-          }}
+          sx={{ display: "flex", justifyContent: "center" }}
         >
           <Paper
             elevation={3}
@@ -64,6 +73,7 @@ function Home() {
               boxShadow: "0 4px 16px rgba(0, 0, 0, 0.06)",
               width: "100%",
               maxWidth: 600,
+              backgroundColor: "rgba(255, 255, 255, 0.9)",
             }}
           >
             <Typography

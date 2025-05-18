@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Paper, Grid } from "@mui/material";
+import background from "../assets/background2.jpg";
 
 function Experience() {
   const events = [
@@ -48,7 +49,11 @@ function Experience() {
         justifyContent: "center",
         px: 3,
         py: 8,
-        background: "linear-gradient(135deg, #f0f4f8, #d9e2ec)",
+        backgroundImage: `url(${background})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", // optional for parallax feel
       }}
     >
       <Grid
@@ -57,13 +62,7 @@ function Experience() {
         spacing={4}
         sx={{ maxWidth: 1200, mx: "auto" }}
       >
-        <Box
-          sx={{
-            position: "relative",
-            top: "-80px",
-            height: "10px",
-          }}
-        />
+        <Box sx={{ position: "relative", top: "-80px", height: "10px" }} />
         <Grid item>
           <Typography
             variant="h3"
@@ -93,7 +92,8 @@ function Experience() {
                     p: 3,
                     borderRadius: 3,
                     textAlign: "left",
-                    boxShadow: "0 4px 16px rgba(0,0,0,0.06)",
+                    boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+                    backgroundColor: "rgba(255, 255, 255, 0.9)", // makes text readable over bg
                   }}
                 >
                   <Box>
