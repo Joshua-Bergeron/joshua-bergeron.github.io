@@ -18,7 +18,7 @@ function Experience() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed", // optional for parallax feel
+        backgroundAttachment: "fixed",
       }}
     >
       <Grid
@@ -58,7 +58,7 @@ function Experience() {
                     borderRadius: 3,
                     textAlign: "left",
                     boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
-                    backgroundColor: "rgba(255, 255, 255, 0.9)", // makes text readable over bg
+                    backgroundColor: "rgba(255, 255, 255, 0.9)",
                   }}
                 >
                   <Box>

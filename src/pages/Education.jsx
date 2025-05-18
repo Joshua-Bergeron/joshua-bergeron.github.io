@@ -19,7 +19,7 @@ function Education() {
         minHeight: "100vh",
         px: 3,
         py: 8,
-        pt: { xs: 12, sm: 15, md: 15 }, // Add top padding here
+        pt: { xs: 12, sm: 15, md: 15 },
         overflow: "hidden",
         display: "flex",
         flexDirection: "column",
@@ -103,13 +103,15 @@ function Education() {
 
           <Grid container spacing={2}>
             {[
-              "Concurrency & Memory Management in OS",
-              "Cryptography & Authentication",
-              "Custom Memory Allocator (C/C++)",
-              "Machine Learning Pipelines",
-              "Agile Software Development",
-              "Search & Ranking Algorithms",
-              "Networking & Socket Programming",
+              "Data Management",
+              "Cryptography",
+              "Data Structures & Algorithms",
+              "Machine Learning & AI",
+              "Operating Systems",
+              "Search Systems",
+              "IoT Systems",
+              "Computer Networks",
+              "Formal language and Automata",
             ].map((course, index) => (
               <Grid item xs={12} sm={6} key={index}>
                 <Paper
