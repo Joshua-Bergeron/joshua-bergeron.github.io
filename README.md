@@ -1,12 +1,36 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using **React** and **Vite**, styled with **Material-UI (MUI)**, and deployed on **GitHub Pages**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Modern and responsive design powered by React and Vite for fast build and hot module replacement (HMR).
+- UI components styled with Material-UI (MUI) for a clean and consistent look.
+- Smooth navigation and interactive elements to enhance user experience.
+- Custom GitHub Actions deployment script automates building and publishing the site to GitHub Pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- React
+- Vite
+- Material-UI
+- JavaScript
+- CSS / HTML
+- GitHub Pages (for hosting)
+
+---
+
+## Development
+
+This project was bootstrapped with Vite's React template.
+
+To get started locally:
+
+```bash
+npm install
+npm run dev
+```

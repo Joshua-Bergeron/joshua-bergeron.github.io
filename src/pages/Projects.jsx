@@ -40,13 +40,25 @@ const projects = [
     demo: "https://garagebook.vercel.app/",
   },
   {
-    title: "Search Engine",
-    tech: ["Python", "Beautiful Soup", "lxml", "NLTK"],
-    bullets: [
-      "Built a search engine from the ground up capable of querying information from 50,000+ subdomains.",
-      "Designed an indexer to perform text extraction, stemming, lemmatization, and tokenization.",
-      "Optimized query time to retrieve and rank matching documents within 1ms using TF-IDF scores.",
+    title: "Portfolio Website",
+    tech: [
+      "React",
+      "Vite",
+      "Material-UI",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "GitHub Pages",
     ],
+    bullets: [
+      "Built a modern, responsive portfolio website using React and Vite for fast development and optimized performance.",
+      "Styled components with Material-UI (MUI) for a clean and consistent UI design.",
+      "Wrote a custom GitHub Actions deployment script to automate building and publishing the Vite app to GitHub Pages.",
+      "Deployed the site seamlessly on GitHub Pages for easy hosting and continuous updates.",
+      "Implemented smooth navigation and interactive UI elements to enhance user experience.",
+    ],
+    github: "https://github.com/Joshua-Bergeron/joshua-bergeron.github.io",
+    demo: "https://joshua-bergeron.github.io/",
   },
   {
     title: "Health Tracking & Recommendation App",
@@ -58,28 +70,20 @@ const projects = [
     ],
   },
   {
+    title: "Search Engine",
+    tech: ["Python", "Beautiful Soup", "lxml", "NLTK"],
+    bullets: [
+      "Built a search engine from the ground up capable of querying information from 50,000+ subdomains.",
+      "Designed an indexer to perform text extraction, stemming, lemmatization, and tokenization.",
+      "Optimized query time to retrieve and rank matching documents within 1ms using TF-IDF scores.",
+    ],
+  },
+  {
     title: "AI Checker Agent",
     tech: ["Python"],
     bullets: [
       "Created an AI agent to play checkers using the Monte Carlo Tree Search algorithm.",
       "Simulated thousands of games to evaluate and select the best move.",
-    ],
-  },
-  {
-    title: "Portfolio Website",
-    tech: [
-      "MongoDB",
-      "Express",
-      "React",
-      "Node",
-      "CSS",
-      "HTML",
-      "JavaScript",
-      "Heroku",
-    ],
-    bullets: [
-      "Designed and implemented a full stack web portfolio.",
-      "Configured and hosted the application on Heroku.",
     ],
   },
 ];
@@ -107,7 +111,7 @@ export default function Projects() {
           mb: 4,
         }}
       >
-        Projects
+        Personal Projects
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">
