@@ -1,8 +1,8 @@
 export const events = [
   {
     year: "June 2023 - Present",
-    title: "Associate Software Engineer in Test",
-    company: "Company Name",
+    title: "Software Engineer in Test I",
+    company: "American Specialty Health",
     logo: "https://logo.clearbit.com/https://www.ashcompanies.com/",
     description: [
       "Formulate comprehensive UI tests in Playwright to assess the functionality of components and sites.",
