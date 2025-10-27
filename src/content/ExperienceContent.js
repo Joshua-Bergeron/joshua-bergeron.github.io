@@ -1,15 +1,26 @@
 export const events = [
   {
-    year: "June 2023 - Present",
+    year: "October 2025 - Present",
+    title: "Software Engineer I",
+    company: "American Specialty Health",
+    logo: "https://logo.clearbit.com/ashcompanies.com",
+    description: [
+      "Build React + MUI components that enhance user experience and accelerate feature delivery.",
+      "Develop .NET APIs that support scalable and reliable back-end services.",
+      "Implement unit and integration tests (Jest, xUnit) to ensure code quality and reduce defects.",
+    ],
+  },
+  {
+    year: "June 2023 - October 2025",
     title: "Software Engineer in Test I",
     company: "American Specialty Health",
     logo: "https://logo.clearbit.com/https://www.ashcompanies.com/",
     description: [
-      "Formulate comprehensive UI tests in Playwright to assess the functionality of components and sites.",
-      "Write and manage automated Postman API tests to ensure the robustness of company software.",
-      "Construct and develop automated CI/CD test pipelines with Azure DevOps.",
-      "Expose and identify bugs in development, testing, staging, and production environments.",
-      "Write JMeter test plans to load-test company applications and sites under heavy customer use.",
+      "Wrote unit tests in C# to validate API functionality and reliability.",
+      "Formulated comprehensive Playwright tests to assess the functionality of components and sites.",
+      "Wrote and managed automated Postman API tests to ensure the robustness of company software.",
+      "Constructed and developed automated CI/CD test pipelines with Azure DevOps.",
+      "Exposed and identified bugs in development, testing, staging, and production environments.",
     ],
   },
   {
