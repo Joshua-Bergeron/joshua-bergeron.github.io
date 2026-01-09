@@ -97,9 +97,12 @@ function Home() {
                 mb: 4,
               }}
             >
-              I’m a passionate software engineer with experience in testing,
-              automation, and building quality software. I love solving
-              problems, learning fast, and creating things that make an impact.
+              Computer Science professional with over two years of experience as
+              a Software Engineer in Test. Solid experience in UI testing,
+              automated test pipelines, bug detection, and resolution. Graduated
+              college in three years while working to fund my education, gaining
+              firsthand experience through an internship, and achieving a 3.99
+              GPA.
             </Typography>
 
             <a href="#connect" style={{ textDecoration: "none" }}>
