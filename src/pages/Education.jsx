@@ -83,7 +83,7 @@ function Education() {
                   Graduation: June 2024
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  GPA: 3.99
+                  GPA: 3.99 - Magna Cum Laude (Top 6%)
                 </Typography>
               </Grid>
             </Grid>

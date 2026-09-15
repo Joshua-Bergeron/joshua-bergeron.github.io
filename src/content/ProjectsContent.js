@@ -48,12 +48,11 @@ export const projects = [
     demo: "https://joshua-bergeron.github.io/",
   },
   {
-    title: "Health Tracking & Recommendation App",
+    title: "Health Tracking & Recommendation iOS App",
     tech: ["Swift", "Firebase", "Apple HealthKit"],
     bullets: [
-      "Developed an iOS app that collects users’ health data and recommends healthy habits.",
-      "Employed Firebase for user registration and authentication.",
-      "Utilized Apple HealthKit to make intelligent, personalized recommendations.",
+      "Integrated Apple HealthKit APIs in Swift to query, process, and normalize live user health data.",
+      "Implemented heuristic-based recommendation logic with Firebase-backed data persistence to generate personalized health guidance.",
     ],
   },
   {

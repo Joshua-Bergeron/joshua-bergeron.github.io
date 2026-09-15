@@ -1,25 +1,39 @@
 export const events = [
   {
     year: "October 2025 - Present",
-    title: "Software Engineer I",
+    title: "Software Engineer I, Full Stack",
     company: "American Specialty Health",
     logo: "https://logos-api.apistemic.com/domain:ashcompanies.com",
     description: [
-      "Build and maintain reusable React components powering a core search experience with filtering, location autocomplete, and Google Maps integration, enabling users to find nearby gyms and fitness services.",
-      "Develop and maintain .NET APIs with REST and GraphQL interfaces supporting scalable, reliable functionality for thousands of users.",
-      "Implement unit and integration tests (Jest, xUnit) to ensure code quality and reduce regressions in critical user flows.",
-      "Work cross-functionally with PMs, designers, and developers across 5+ teams to translate requirements into user-facing features.",
+      "Reduced response time by 95% for a complex query by precomputing data during SSIS processing and optimizing the underlying SQL stored procedure.",
+      "Develop API endpoints, business logic, and GraphQL integrations across 5+ .NET services, including one processing 34.5M+ requests per month.",
+      "Build reusable React, TypeScript, and MUI search components with Google Maps and location autocomplete across 4+ production sites.",
+      "Consolidated 2 legacy provider and member preference workflows into a single modern application.",
+      "Lead collaboration across 4+ engineering teams to deliver shared full-stack features.",
     ],
   },
   {
     year: "June 2023 - October 2025",
-    title: "Software Engineer in Test I",
     company: "American Specialty Health",
     logo: "https://logos-api.apistemic.com/domain:ashcompanies.com",
+    roles: [
+      {
+        title: "Software Engineer in Test Intern",
+        period: "June 2023 - June 2024",
+      },
+      {
+        title: "Associate Software Engineer in Test",
+        period: "June 2024 - July 2025",
+      },
+      {
+        title: "Software Engineer in Test I",
+        period: "July 2025 - October 2025",
+      },
+    ],
     description: [
-      "Initiated and formulated 200+ comprehensive UI tests in Playwright and automated Postman API tests to ensure the robustness of components and flows",
-      "Constructed and developed automated CI/CD test pipelines with Azure DevOps to routinely run tests.",
-      "Exposed and identified 50+ bugs in four environments.",
+      "Built a Playwright automation framework from scratch and scaled it to 1,000+ UI tests validating business rules across Storybook components and production sites.",
+      "Developed 50+ Postman API tests and integrated automated regression testing into Azure DevOps CI/CD pipelines.",
+      "Increased .NET API test coverage by 10% through targeted xUnit tests across backend services.",
     ],
   },
   {
@@ -28,18 +42,7 @@ export const events = [
     company: "Kros-Wise Consulting",
     logo: "https://logos-api.apistemic.com/domain:kros-wise.com",
     description: [
-      "Assisted 10+ employees with IT-related issues such as troubleshooting and upgrading user hardware.",
-      "Wrote comprehensive documentation for IT policies and procedures such as user account creation and software installations.",
-    ],
-  },
-  {
-    year: "November 2019 - June 2023",
-    title: "Lead Math Instructor",
-    company: "Mathnasium",
-    logo: "https://logos-api.apistemic.com/domain:mathnasium.com",
-    description: [
-      "Instructed 100+ K-12 students in various levels of math (through calculus).",
-      "Trained new tutors, managed students’ curriculums, and maintained an organized learning environment.",
+      "Supported IT infrastructure, resolved employee hardware and software issues, and documented internal IT procedures.",
     ],
   },
 ];

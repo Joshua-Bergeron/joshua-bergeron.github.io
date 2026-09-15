@@ -82,15 +82,58 @@ function Experience() {
                           borderRadius: "8px",
                           mr: 2,
                           backgroundColor: "#fff",
+                          flexShrink: 0,
                         }}
                       />
                       <Box>
-                        <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                          {event.title}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          {event.company}
-                        </Typography>
+                        {event.title ? (
+                          <>
+                            <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                              {event.title}
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                              {event.company}
+                            </Typography>
+                          </>
+                        ) : (
+                          <>
+                            <Typography
+                              variant="body2"
+                              color="text.secondary"
+                              sx={{ mb: 1 }}
+                            >
+                              {event.company}
+                            </Typography>
+                            <Box
+                              sx={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 0.5,
+                              }}
+                            >
+                              {event.roles.map((role, roleIndex) => (
+                                <Typography
+                                  key={roleIndex}
+                                  variant="subtitle2"
+                                  sx={{
+                                    fontWeight: 600,
+                                    fontSize: "0.95rem",
+                                  }}
+                                >
+                                  {role.title}
+                                  <Typography
+                                    component="span"
+                                    variant="caption"
+                                    color="text.secondary"
+                                    sx={{ ml: 1, fontWeight: 400 }}
+                                  >
+                                    ({role.period})
+                                  </Typography>
+                                </Typography>
+                              ))}
+                            </Box>
+                          </>
+                        )}
                       </Box>
                     </Box>
 
