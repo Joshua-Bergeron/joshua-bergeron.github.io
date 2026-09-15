@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography, Avatar, Button, Paper } from "@mui/material";
-import profileImage from "../assets/FullSizeRender.jpg";
+import profileImage from "../assets/ProfilePic.jpeg";
 import background from "../assets/background1.jpg";
 
 function Home() {
@@ -97,12 +97,12 @@ function Home() {
                 mb: 4,
               }}
             >
-              Computer Science professional with over two years of experience as
-              a Software Engineer in Test. Solid experience in UI testing,
-              automated test pipelines, bug detection, and resolution. Graduated
-              college in three years while working to fund my education, gaining
-              firsthand experience through an internship, and achieving a 3.99
-              GPA.
+              Full-stack Software Engineer building production applications with
+              React, TypeScript, C#, ASP.NET Core, GraphQL, and SQL. Experience
+              developing frontend and backend features, optimizing application
+              performance, and collaborating across multiple engineering teams.
+              Graduated from UC Irvine with a B.S. in Computer Science in three
+              years with a 3.99 GPA, Magna Cum Laude.
             </Typography>
 
             <a href="#connect" style={{ textDecoration: "none" }}>

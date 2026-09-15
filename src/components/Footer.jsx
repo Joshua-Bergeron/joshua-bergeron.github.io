@@ -12,7 +12,7 @@ function Footer() {
       }}
     >
       <Typography variant="body2">
-        © 2025 Joshua Bergeron. All rights reserved.
+        © 2026 Joshua Bergeron. All rights reserved.
       </Typography>
     </Box>
   );
